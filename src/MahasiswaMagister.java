@@ -1,19 +1,21 @@
+import java.util.ArrayList;
+
 public class MahasiswaMagister extends Mahasiswa{
-    private ArrayList<MatkulAmbil> ambilMataKuliah = new ArrayList<MatkulAmbil>();
+    private ArrayList<MatkulAmbil> ambil = new ArrayList<MatkulAmbil>();
     private String judulPenelitianTesis;
 
-    public MahasiswaMagister(String nama, String alamat, String ttl, String telepon, int nim, String jurusan, ArrayList<MatkulAmbil> ambilMataKuliah, String judulPenelitianTesis) {
+    public MahasiswaMagister(String nama, String alamat, String ttl, String telepon, int nim, String jurusan, ArrayList<MatkulAmbil> ambil, String judulPenelitianTesis) {
         super(nama, alamat, ttl, telepon, nim, jurusan);
-        this.ambilMataKuliah = ambilMataKuliah;
+        this.ambil = ambil;
         this.judulPenelitianTesis = judulPenelitianTesis;
     }
 
-    public ArrayList<MatkulAmbil> getAmbilMataKuliah() {
-        return ambilMataKuliah;
+    public ArrayList<MatkulAmbil> getAmbil() {
+        return ambil;
     }
 
-    public void setAmbilMataKuliah(ArrayList<MatkulAmbil> ambilMataKuliah) {
-        this.ambilMataKuliah = ambilMataKuliah;
+    public void setAmbil(ArrayList<MatkulAmbil> ambil) {
+        this.ambil = ambil;
     }
 
     public String getJudulPenelitianTesis() {
