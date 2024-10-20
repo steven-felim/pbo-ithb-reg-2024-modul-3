@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class MahasiswaSarjana extends Mahasiswa {
     private ArrayList<MatkulAmbil> ambilMataKuliah = new ArrayList<MatkulAmbil>();
 
