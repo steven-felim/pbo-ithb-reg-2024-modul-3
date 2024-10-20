@@ -1,11 +1,13 @@
+import java.util.ArrayList;
+
 public class Dosen extends Staff {
     private String department;
-    private ArrayList<MatkulAjar> ajarMataKuliah = new ArrayList<MatkulAjar>();
+    private MatkulAjar ajar;
 
-    public Dosen(String nama, String alamat, String ttl, String telepon, int nik, String department, ArrayList<MatkulAjar> ajarMataKuliah) {
+    public Dosen(String nama, String alamat, String ttl, String telepon, int nik, String department, MatkulAjar ajar) {
         super(nama, alamat, ttl, telepon, nik);
         this.department = department;
-        this.ajarMataKuliah = ajarMataKuliah;
+        this.ajar = ajar;
     }
 
     public String getDepartment() {
@@ -16,11 +18,11 @@ public class Dosen extends Staff {
         this.department = department;
     }
 
-    public ArrayList<MatkulAjar> getAjarMataKuliah() {
-        return ajarMataKuliah;
+    public MatkulAjar getAjar() {
+        return ajar;
     }
 
-    public void setAjarMataKuliah(ArrayList<MatkulAjar> ajarMataKuliah) {
-        this.ajarMataKuliah = ajarMataKuliah;
+    public void setAjar(MatkulAjar ajar) {
+        this.ajar = ajar;
     }
 }
