@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class Dosen extends Staff {
     private String department;
-    private MatkulAjar ajar;
+    private ArrayList<MatkulAjar> ajar = new ArrayList<MatkulAjar>();
 
-    public Dosen(String nama, String alamat, String ttl, String telepon, int nik, String department, MatkulAjar ajar) {
+    public Dosen(String nama, String alamat, String ttl, String telepon, int nik, String department, ArrayList<MatkulAjar> ajar) {
         super(nama, alamat, ttl, telepon, nik);
         this.department = department;
         this.ajar = ajar;
@@ -18,11 +18,11 @@ public class Dosen extends Staff {
         this.department = department;
     }
 
-    public MatkulAjar getAjar() {
+    public ArrayList<MatkulAjar> getAjar() {
         return ajar;
     }
 
-    public void setAjar(MatkulAjar ajar) {
+    public void setAjar(ArrayList<MatkulAjar> ajar) {
         this.ajar = ajar;
     }
 }
