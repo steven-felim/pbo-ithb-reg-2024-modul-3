@@ -1,25 +1,25 @@
 import java.util.ArrayList;
 
 public class MatkulAmbil extends MataKuliah{
-    private ArrayList<MataKuliah> mataKuliah = new ArrayList<MataKuliah>();
+    private MataKuliah ambil;
     private ArrayList<Presensi> presensi = new ArrayList<Presensi>();
     private double n1, n2, n3;
 
-    public MatkulAmbil(String kode, int sks, String nama, ArrayList<MataKuliah> mataKuliah, ArrayList<Presensi> presensi, double n1, double n2, double n3) {
+    public MatkulAmbil(String kode, int sks, String nama, MataKuliah ambil, ArrayList<Presensi> presensi, double n1, double n2, double n3) {
         super(kode, sks, nama);
-        this.mataKuliah = mataKuliah;
+        this.ambil = ambil;
         this.presensi = presensi;
         this.n1 = n1;
         this.n2 = n2;
         this.n3 = n3;
     }
 
-    public ArrayList<MataKuliah> getMataKuliah() {
-        return mataKuliah;
+    public MataKuliah getAmbil() {
+        return ambil;
     }
 
-    public void setMataKuliah(ArrayList<MataKuliah> mataKuliah) {
-        this.mataKuliah = mataKuliah;
+    public void setAmbil(MataKuliah ambil) {
+        this.ambil = ambil;
     }
 
     public ArrayList<Presensi> getPresensi() {

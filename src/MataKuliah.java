@@ -1,4 +1,4 @@
-public abstract class MataKuliah {
+public class MataKuliah {
     private String kode;
     private int sks;
     private String nama;
