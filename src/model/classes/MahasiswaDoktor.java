@@ -1,3 +1,5 @@
+package model.classes;
+
 public class MahasiswaDoktor extends Mahasiswa {
     private String judulPenelitianDisertasi;
     private double nilaiSidang1, nilaiSidang2, nilaiSidang3;

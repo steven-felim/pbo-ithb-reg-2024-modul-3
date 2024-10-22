@@ -1,3 +1,5 @@
+package model.classes;
+
 import java.util.ArrayList;
 
 public class MahasiswaSarjana extends Mahasiswa {
@@ -14,5 +16,10 @@ public class MahasiswaSarjana extends Mahasiswa {
 
     public void setAmbil(ArrayList<MatkulAmbil> ambil) {
         this.ambil = ambil;
+    }
+
+    @Override
+    public String toString() {
+        return super.getString() + "\n " + "NIM                    : ";
     }
 }

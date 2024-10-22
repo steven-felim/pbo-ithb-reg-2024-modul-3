@@ -1,8 +1,10 @@
+package model.classes;
+
 public abstract class User {
-    String nama;
-    String alamat;
-    String ttl;
-    String telepon;
+    private String nama;
+    private String alamat;
+    private String ttl;
+    private String telepon;
 
     public User(String nama, String alamat, String ttl, String telepon) {
         this.nama = nama;
@@ -41,5 +43,12 @@ public abstract class User {
 
     public void setTelepon(String telepon) {
         this.telepon = telepon;
+    }
+
+    public String getString() {
+        return "Nama                   : " + nama + "\n" +
+                "Alamat                 : " + alamat + "\n" +
+                "Tempat & Tanggal Lahir : " + ttl + "\n" +
+                "Telepon                : " + telepon;
     }
 }
