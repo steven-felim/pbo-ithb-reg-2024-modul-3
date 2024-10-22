@@ -43,4 +43,18 @@ public class MahasiswaDoktor extends Mahasiswa {
     public void setNilaiSidang3(double nilaiSidang3) {
         this.nilaiSidang3 = nilaiSidang3;
     }
+
+    @Override
+    public String toString() {
+        return "Nama                       : " + getNama() + "\n" +
+                "Alamat                     : " + getAlamat() + "\n" +
+                "Tempat & Tanggal Lahir     : " + getTtl() + "\n" +
+                "Telepon                    : " + getTelepon() + "\n " +
+                "NIM                        : " + getNim() + "\n " +
+                "Jurusan                    : " + getJurusan() + "\n" +
+                "Judul Penelitian Disertasi : " + judulPenelitianDisertasi + "\n " +
+                "Nilai sidang 1             : " + nilaiSidang1 + "\n " +
+                "Nilai sidang 2             : " + nilaiSidang2 + "\n " +
+                "Nilai sidang 3             : " + nilaiSidang3;
+    }
 }

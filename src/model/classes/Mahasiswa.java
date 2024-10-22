@@ -28,6 +28,11 @@ public class Mahasiswa extends User {
 
     @Override
     public String toString() {
-        return super.getString() + "\n " + "NIM                    : " + nim;
+        return "Nama                   : " + getNama() + "\n" +
+                "Alamat                 : " + getAlamat() + "\n" +
+                "Tempat & Tanggal Lahir : " + getTtl() + "\n" +
+                "Telepon                : " + getTelepon() + "\n " +
+                "NIM                    : " + nim + "\n " +
+                "Jurusan                : " + jurusan + "\n ";
     }
 }

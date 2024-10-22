@@ -27,4 +27,15 @@ public class MahasiswaMagister extends Mahasiswa{
     public void setJudulPenelitianTesis(String judulPenelitianTesis) {
         this.judulPenelitianTesis = judulPenelitianTesis;
     }
+    @Override
+    public String toString() {
+        return "Nama                   : " + getNama() + "\n" +
+                "Alamat                 : " + getAlamat() + "\n" +
+                "Tempat & Tanggal Lahir : " + getTtl() + "\n" +
+                "Telepon                : " + getTelepon() + "\n " +
+                "NIM                    : " + getNim() + "\n " +
+                "Jurusan                : " + getJurusan() + "\n" +
+                "Judul Penelitian Tesis : " + judulPenelitianTesis + "\n " +
+                "Mata kuliah            : " + ambil.get(0).toString();
+    }
 }
