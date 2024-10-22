@@ -1,3 +1,5 @@
+package model.classes;
+
 public class Mahasiswa extends User {
     private int nim;
     private String jurusan;
@@ -22,5 +24,10 @@ public class Mahasiswa extends User {
 
     public void setJurusan(String jurusan) {
         this.jurusan = jurusan;
+    }
+
+    @Override
+    public String toString() {
+        return super.getString() + "\n " + "NIM                    : " + nim;
     }
 }

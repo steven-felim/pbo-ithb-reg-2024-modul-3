@@ -1,3 +1,5 @@
+package model.classes;
+
 import java.util.ArrayList;
 
 public class DosenHonor extends Dosen{

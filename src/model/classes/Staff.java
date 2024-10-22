@@ -1,3 +1,5 @@
+package model.classes;
+
 public class Staff extends User {
     private int nik;
 
