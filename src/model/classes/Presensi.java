@@ -1,3 +1,5 @@
+package model.classes;
+
 import java.util.Date;
 
 public class Presensi {
