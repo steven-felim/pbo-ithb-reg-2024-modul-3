@@ -15,4 +15,13 @@ public class Staff extends User {
     public void setNik(int nik) {
         this.nik = nik;
     }
+
+    @Override
+    public String toString() {
+        return "Nama                   : " + getNama() + "\n" +
+                "Alamat                 : " + getAlamat() + "\n" +
+                "Tempat & Tanggal Lahir : " + getTtl() + "\n" +
+                "Telepon                : " + getTelepon() + "\n " +
+                "NIK                    : " + getNik();
+    }
 }

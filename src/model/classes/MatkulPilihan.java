@@ -3,12 +3,12 @@ package model.classes;
 import java.util.ArrayList;
 
 public class MatkulPilihan extends MataKuliah {
-    private ArrayList<Mahasiswa> mhs = new ArrayList<Mahasiswa>();
+    private ArrayList<Mahasiswa> daftar;
     private int minimumMhs;
 
-    public MatkulPilihan(String kode, int sks, String nama, ArrayList<Mahasiswa> mhs, int minimumMhs) {
+    public MatkulPilihan(String kode, int sks, String nama, ArrayList<Mahasiswa> daftar, int minimumMhs) {
         super(kode, sks, nama);
-        this.mhs = mhs;
+        this.daftar = daftar;
         this.minimumMhs = minimumMhs;
     }
 
@@ -21,10 +21,30 @@ public class MatkulPilihan extends MataKuliah {
     }
 
     public ArrayList<Mahasiswa> getMhs() {
-        return mhs;
+        return daftar;
     }
 
-    public void setMhs(ArrayList<Mahasiswa> mhs) {
-        this.mhs = mhs;
+    public void setMhs(ArrayList<Mahasiswa> daftar) {
+        this.daftar = daftar;
+    }
+
+    public boolean daftarMahasiswa(Mahasiswa mhs) {
+        if (daftar.size() < 10) {
+            daftar.add(mhs);
+            return true;
+        }
+        return false;
+    }
+
+    public boolean kuotaTerpenuhi() {
+        return daftar.size() >= 10;
+    }
+
+    @Override
+    public String toString() {
+        return "Kode Mata Kuliah    : " + getKode() + "\n" +
+                "Nama Mata Kuliah    : " + getNama() + "\n" +
+                "Jumlah SKS          : " + getSks() + "\n" +
+                "Jumlah Minimum Mhs  : " + getMinimumMhs();
     }
 }

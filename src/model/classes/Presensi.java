@@ -1,12 +1,14 @@
 package model.classes;
 
+import model.enums.Status;
+
 import java.util.Date;
 
 public class Presensi {
     Date tanggal;
-    int status;
+    Status status;
 
-    public Presensi(Date tanggal, int status) {
+    public Presensi(Date tanggal, Status status) {
         this.tanggal = tanggal;
         this.status = status;
     }
@@ -19,11 +21,15 @@ public class Presensi {
         this.tanggal = tanggal;
     }
 
-    public int getStatus() {
+    public Status getStatus() {
         return status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(Status status) {
         this.status = status;
+    }
+
+    public String toString() {
+        return getTanggal().toString() + " - " + getStatus() + "\n";
     }
 }

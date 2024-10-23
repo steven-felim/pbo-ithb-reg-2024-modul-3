@@ -17,4 +17,15 @@ public class DosenHonor extends Dosen{
     public void setHonorPerSKS(double honorPerSKS) {
         this.honorPerSKS = honorPerSKS;
     }
+
+    @Override
+    public String toString() {
+
+        return "Nama                   : " + getNama() + "\n" +
+                "Alamat                 : " + getAlamat() + "\n" +
+                "Tempat & Tanggal Lahir : " + getTtl() + "\n" +
+                "Telepon                : " + getTelepon() + "\n " +
+                "NIK                    : " + getNik() + "\n" +
+                "Honor per SKS          : " + getHonorPerSKS();
+    }
 }

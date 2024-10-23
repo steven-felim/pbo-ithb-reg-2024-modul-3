@@ -27,4 +27,14 @@ public class Karyawan extends Staff{
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+    @Override
+    public String toString() {
+        return "Nama                   : " + getNama() + "\n" +
+                "Alamat                 : " + getAlamat() + "\n" +
+                "Tempat & Tanggal Lahir : " + getTtl() + "\n" +
+                "Telepon                : " + getTelepon() + "\n " +
+                "NIK                    : " + getNik() + "\n" +
+                "Gaji                   : " + getSalary();
+    }
 }

@@ -34,4 +34,10 @@ public class MataKuliah {
     public void setNama(String nama) {
         this.nama = nama;
     }
+
+    public String toString() {
+        return "Kode Mata Kuliah    : " + getKode() + "\n" +
+                "Nama Mata Kuliah    : " + getNama() + "\n" +
+                "Jumlah SKS          : " + getSks();
+    }
 }

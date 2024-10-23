@@ -44,11 +44,4 @@ public abstract class User {
     public void setTelepon(String telepon) {
         this.telepon = telepon;
     }
-
-    public String getString() {
-        return "Nama                   : " + nama + "\n" +
-                "Alamat                 : " + alamat + "\n" +
-                "Tempat & Tanggal Lahir : " + ttl + "\n" +
-                "Telepon                : " + telepon;
-    }
 }

@@ -27,4 +27,20 @@ public class Dosen extends Staff {
     public void setAjar(ArrayList<MatkulAjar> ajar) {
         this.ajar = ajar;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder ngajar  = new StringBuilder("Matkul yang diajar  : ");
+
+        for (MatkulAjar a : getAjar()) {
+            ngajar.append(" - ").append(a.toString()).append("\n");
+        }
+
+        return "Nama                   : " + getNama() + "\n" +
+                "Alamat                 : " + getAlamat() + "\n" +
+                "Tempat & Tanggal Lahir : " + getTtl() + "\n" +
+                "Telepon                : " + getTelepon() + "\n " +
+                "NIK                    : " + getNik() + "\n" +
+                ngajar.toString();
+    }
 }

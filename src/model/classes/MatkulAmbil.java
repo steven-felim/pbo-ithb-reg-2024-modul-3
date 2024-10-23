@@ -55,4 +55,15 @@ public class MatkulAmbil extends MataKuliah{
     public void setN3(double n3) {
         this.n3 = n3;
     }
+
+    @Override
+    public String toString() {
+        return "Kode Mata Kuliah    : " + getKode() + "\n" +
+                "Nama Mata Kuliah    : " + getNama() + "\n" +
+                "Jumlah SKS          : " + getSks() + "\n" +
+                "Nilai 1             : " + getN1() + "\n" +
+                "Nilai 2             : " + getN2() + "\n" +
+                "Nilai 3             : " + getN3();
+    }
+
 }

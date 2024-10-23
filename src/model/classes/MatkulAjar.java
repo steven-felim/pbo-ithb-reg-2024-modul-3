@@ -27,4 +27,18 @@ public class MatkulAjar extends MataKuliah {
     public void setPresensi(ArrayList<PresensiStaff> presensi) {
         this.presensi = presensi;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder absen  = new StringBuilder("Presensi            : ");
+
+        for (PresensiStaff p : presensi) {
+            absen.append(" - ").append(p.toString()).append("\n");
+        }
+
+        return "Kode Mata Kuliah    : " + getKode() + "\n" +
+                "Nama Mata Kuliah    : " + getNama() + "\n" +
+                "Jumlah SKS          : " + getSks() + "\n" +
+                absen.toString();
+    }
 }
