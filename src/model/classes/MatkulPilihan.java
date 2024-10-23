@@ -23,6 +23,6 @@ public class MatkulPilihan extends MataKuliah {
         return "Kode Mata Kuliah    : " + getKode() + "\n" +
                 "Nama Mata Kuliah    : " + getNama() + "\n" +
                 "Jumlah SKS          : " + getSks() + "\n" +
-                "Jumlah Minimum Mhs  : " + getMinimumMhs();
+                "Minimum Mahasiswa   : " + getMinimumMhs();
     }
 }
