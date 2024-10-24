@@ -4,18 +4,18 @@ import java.util.Date;
 import model.enums.Status;
 
 public class PresensiStaff extends Presensi {
-    long jam;
+    String jam;
 
-    public PresensiStaff(Date tanggal, Status status, long jam) {
+    public PresensiStaff(Date tanggal, Status status, String jam) {
         super(tanggal, status);
         this.jam = jam;
     }
 
-    public long getJam() {
+    public String getJam() {
         return jam;
     }
 
-    public void setJam(long jam) {
+    public void setJam(String jam) {
         this.jam = jam;
     }
 

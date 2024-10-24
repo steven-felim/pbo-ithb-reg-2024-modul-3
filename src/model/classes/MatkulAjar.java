@@ -2,12 +2,11 @@ package model.classes;
 
 import java.util.ArrayList;
 
-public class MatkulAjar extends MataKuliah {
+public class MatkulAjar {
     private MataKuliah ajar;
     private ArrayList<PresensiStaff> presensi = new ArrayList<PresensiStaff>();
 
-    public MatkulAjar(String kode, int sks, String nama, MataKuliah ajar, ArrayList<PresensiStaff> presensi) {
-        super(kode, sks, nama);
+    public MatkulAjar(MataKuliah ajar, ArrayList<PresensiStaff> presensi) {
         this.ajar = ajar;
         this.presensi = presensi;
     }
@@ -30,15 +29,13 @@ public class MatkulAjar extends MataKuliah {
 
     @Override
     public String toString() {
-        StringBuilder absen  = new StringBuilder("Presensi            : ");
 
+        StringBuilder absen  = new StringBuilder("Presensi            : ");
         for (PresensiStaff p : presensi) {
             absen.append(" - ").append(p.toString()).append("\n");
         }
 
-        return "Kode Mata Kuliah    : " + getKode() + "\n" +
-                "Nama Mata Kuliah    : " + getNama() + "\n" +
-                "Jumlah SKS          : " + getSks() + "\n" +
+        return getAjar().toString() + "\n" +
                 absen.toString();
     }
 }
