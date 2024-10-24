@@ -36,6 +36,6 @@ public class MatkulAjar {
         }
 
         return getAjar().toString() + "\n" +
-                absen.toString();
+                absen.toString() + "\n";
     }
 }

@@ -49,12 +49,12 @@ public class MahasiswaDoktor extends Mahasiswa {
         return "Nama                       : " + getNama() + "\n" +
                 "Alamat                     : " + getAlamat() + "\n" +
                 "Tempat & Tanggal Lahir     : " + getTtl() + "\n" +
-                "Telepon                    : " + getTelepon() + "\n " +
+                "Telepon                    : " + getTelepon() + "\n" +
                 "NIM                        : " + getNim() + "\n " +
                 "Jurusan                    : " + getJurusan() + "\n" +
-                "Judul Penelitian Disertasi : " + judulPenelitianDisertasi + "\n " +
-                "Nilai sidang 1             : " + nilaiSidang1 + "\n " +
-                "Nilai sidang 2             : " + nilaiSidang2 + "\n " +
+                "Judul Penelitian Disertasi : " + judulPenelitianDisertasi + "\n" +
+                "Nilai sidang 1             : " + nilaiSidang1 + "\n" +
+                "Nilai sidang 2             : " + nilaiSidang2 + "\n" +
                 "Nilai sidang 3             : " + nilaiSidang3;
     }
 }

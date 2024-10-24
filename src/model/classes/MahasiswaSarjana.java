@@ -21,11 +21,12 @@ public class MahasiswaSarjana extends Mahasiswa {
     @Override
     public String toString() {
         return "Nama                   : " + getNama() + "\n" +
-                "Alamat                 : " + getAlamat() + "\n" +
+                "Alamat                 : " + getAlamat() + "\n"+
                 "Tempat & Tanggal Lahir : " + getTtl() + "\n" +
-                "Telepon                : " + getTelepon() + "\n " +
-                "NIM                    : " + getNim() + "\n " +
-                "Jurusan                : " + getJurusan() + "\n " +
-                "Mata kuliah            : " + ambil.get(0).toString();
+                "Telepon                : " + getTelepon() + "\n" +
+                "NIM                    : " + getNim() + "\n" +
+                "Jurusan                : " + getJurusan() + "\n" +
+                "Mata kuliah            : "  + "\n" +
+                ambil.toString();
     }
 }

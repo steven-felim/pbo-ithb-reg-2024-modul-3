@@ -33,7 +33,7 @@ public class Karyawan extends Staff{
         return "Nama                   : " + getNama() + "\n" +
                 "Alamat                 : " + getAlamat() + "\n" +
                 "Tempat & Tanggal Lahir : " + getTtl() + "\n" +
-                "Telepon                : " + getTelepon() + "\n " +
+                "Telepon                : " + getTelepon() + "\n" +
                 "NIK                    : " + getNik() + "\n" +
                 "Gaji                   : " + getSalary();
     }

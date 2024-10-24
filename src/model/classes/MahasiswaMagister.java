@@ -32,10 +32,10 @@ public class MahasiswaMagister extends Mahasiswa{
         return "Nama                   : " + getNama() + "\n" +
                 "Alamat                 : " + getAlamat() + "\n" +
                 "Tempat & Tanggal Lahir : " + getTtl() + "\n" +
-                "Telepon                : " + getTelepon() + "\n " +
-                "NIM                    : " + getNim() + "\n " +
+                "Telepon                : " + getTelepon() + "\n" +
+                "NIM                    : " + getNim() + "\n" +
                 "Jurusan                : " + getJurusan() + "\n" +
-                "Judul Penelitian Tesis : " + judulPenelitianTesis + "\n " +
+                "Judul Penelitian Tesis : " + judulPenelitianTesis + "\n" +
                 "Mata kuliah            : " + ambil.get(0).toString();
     }
 }

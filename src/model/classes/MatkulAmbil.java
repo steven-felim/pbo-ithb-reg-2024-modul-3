@@ -60,7 +60,7 @@ public class MatkulAmbil {
         return getAmbil().toString() + "\n" +
                 "Nilai 1 Mahasiswa   : " + getN1() + "\n" +
                 "Nilai 2 Mahasiswa   : " + getN2() + "\n" +
-                "Nilai 3 Mahasiswa   : " + getN3();
+                "Nilai 3 Mahasiswa   : " + getN3() + "\n";
     }
 
 }

@@ -38,6 +38,6 @@ public class MataKuliah {
     public String toString() {
         return "Kode Mata Kuliah    : " + getKode() + "\n" +
                 "Nama Mata Kuliah    : " + getNama() + "\n" +
-                "Jumlah SKS          : " + getSks();
+                "Jumlah SKS          : " + getSks()  + "\n";
     }
 }
