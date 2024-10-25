@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class MatkulAjar {
     private MataKuliah ajar;
-    private ArrayList<PresensiStaff> presensi = new ArrayList<PresensiStaff>();
+    private ArrayList<PresensiStaff> presensi;
 
     public MatkulAjar(MataKuliah ajar, ArrayList<PresensiStaff> presensi) {
         this.ajar = ajar;
@@ -30,12 +30,7 @@ public class MatkulAjar {
     @Override
     public String toString() {
 
-        StringBuilder absen  = new StringBuilder("Presensi            : ");
-        for (PresensiStaff p : presensi) {
-            absen.append(" - ").append(p.toString()).append("\n");
-        }
-
         return getAjar().toString() + "\n" +
-                absen.toString() + "\n";
+                getPresensi().toString() + "\n";
     }
 }

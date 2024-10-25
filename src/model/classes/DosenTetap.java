@@ -26,6 +26,7 @@ public class DosenTetap extends Dosen{
                 "Tempat & Tanggal Lahir : " + getTtl() + "\n" +
                 "Telepon                : " + getTelepon() + "\n" +
                 "NIK                    : " + getNik() + "\n" +
-                "Gaji                   : " + getSalary();
+                "Gaji                   : " + getSalary() + "\n" +
+                getAjar().toString();
     }
 }

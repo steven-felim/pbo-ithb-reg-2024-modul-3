@@ -87,8 +87,8 @@ public class Main {
 
         // Karyawan
         List<Karyawan> k = new ArrayList<>();
-        k.add(new Karyawan("Tono", "Jalan Kopo No. 100", "Bandung, 01-01-1980", "03933392471", 9015001, 4000000, pr1));
-        k.add(new Karyawan("Toni", "Jalan Cihanjuang No. 50", "Subang, 07-03-1986", "03952492471", 9015002, 4300000, pr2));
+        k.add(new Karyawan("Tono", "Jalan Kopo No. 100", "Bandung, 01-01-1980", "03933392471", 9015001, 4000000, prs));
+        k.add(new Karyawan("Toni", "Jalan Cihanjuang No. 50", "Subang, 07-03-1986", "03952492471", 9015002, 4300000, prs));
 
         // Matkul yang diajar dosen
         ArrayList<MatkulAjar> aj1 = new ArrayList<>();

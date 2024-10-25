@@ -26,6 +26,8 @@ public class DosenHonor extends Dosen{
                 "Tempat & Tanggal Lahir : " + getTtl() + "\n" +
                 "Telepon                : " + getTelepon() + "\n" +
                 "NIK                    : " + getNik() + "\n" +
-                "Honor per SKS          : " + getHonorPerSKS();
+                "Honor per SKS          : " + getHonorPerSKS() + "\n" +
+                getAjar().toString();
+
     }
 }

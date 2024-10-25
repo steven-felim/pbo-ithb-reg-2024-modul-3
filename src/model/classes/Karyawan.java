@@ -4,19 +4,19 @@ import java.util.ArrayList;
 
 public class Karyawan extends Staff{
     private double salary;
-    private ArrayList<Presensi> presensiStaff = new ArrayList<Presensi>();
+    private ArrayList<PresensiStaff> presensiStaff;
 
-    public Karyawan(String nama, String alamat, String ttl, String telepon, int nik, double salary, ArrayList<Presensi> presensiStaff) {
+    public Karyawan(String nama, String alamat, String ttl, String telepon, int nik, double salary, ArrayList<PresensiStaff> presensiStaff) {
         super(nama, alamat, ttl, telepon, nik);
         this.salary = salary;
         this.presensiStaff = presensiStaff;
     }
 
-    public ArrayList<Presensi> getPresensiStaff() {
+    public ArrayList<PresensiStaff> getPresensiStaff() {
         return presensiStaff;
     }
 
-    public void setPresensiStaff(ArrayList<Presensi> presensiStaff) {
+    public void setPresensiStaff(ArrayList<PresensiStaff> presensiStaff) {
         this.presensiStaff = presensiStaff;
     }
 
@@ -35,6 +35,7 @@ public class Karyawan extends Staff{
                 "Tempat & Tanggal Lahir : " + getTtl() + "\n" +
                 "Telepon                : " + getTelepon() + "\n" +
                 "NIK                    : " + getNik() + "\n" +
-                "Gaji                   : " + getSalary();
+                "Gaji                   : " + getSalary() + "\n" +
+                presensiStaff.toString();
     }
 }

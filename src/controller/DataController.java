@@ -59,10 +59,10 @@ public class DataController {
                     1. Lihat daftar mata kuliah
                     2. Lihat daftar mahasiswa sarjana
                     3. Lihat daftar mahasiswa magister
-                    3. Lihat daftar mahasiswa doktor
-                    4. Lihat daftar karyawan
-                    5. Lihat daftar dosen tetap
-                    6. Lihat daftar dosen honor
+                    4. Lihat daftar mahasiswa doktor
+                    5. Lihat daftar karyawan
+                    6. Lihat daftar dosen tetap
+                    7. Lihat daftar dosen honor
                     99. Berhenti""");
             pilih = input.nextInt();
             switch (pilih){
